@@ -80,7 +80,7 @@ init_prefix() {
             echo Warning: path \"$PREFIX\" exists\; this script will remove it.
             echo You may press Ctrl+C now to abort this script.
         }>&2
-        ( set -x; sleep 20 )
+        ( set -x; sleep 2 )
     fi
     ( set -x; sudo rm -rf $PREFIX)
     sudo mkdir -p $PREFIX/{logs,config}
