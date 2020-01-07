@@ -134,9 +134,6 @@ do_system_check() {
         print_requirements
         print_minimal_fail
     fi
-    if [ $_SYS_WARN -eq 1 ]; then
-        print_requirements
-    fi
 }
 
 
